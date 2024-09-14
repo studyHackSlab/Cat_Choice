@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     // console.log(split[split.length - 1].split("_")[this.length + 1].split(".")[0].split("0")[1]);
     // console.log(split[split.length - 1].split("_"));
 
-    const max_number = 2;
+    const max_number = 3;
     // let random_number = Math.floor(Math.random() * max_number) + 1;
     // img[2].src = "img/cat_0" + random_number + ".png";
 
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             let answer = img_black[i].src.split("/")[split.length - 1].split("_")[this.length + 1].split(".")[0].split("0")[1];
             // console.log(img_black[i].src.split("/")[split.length - 1].split("_")[this.length + 1].split(".")[0].split("0")[1]);
             console.log(img_black[i].src);
-            if (answer == 1) {
+            if (answer == 1 || answer == 3 ) {
                 // if (answer == 3) {
                 li[i].classList.add("answer");
             }
