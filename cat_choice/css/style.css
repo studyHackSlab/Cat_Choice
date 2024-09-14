@@ -12,6 +12,7 @@ html{
 
 img {
     width: 65px;
+    width: 50px;
     object-fit: cover;
 }
 
