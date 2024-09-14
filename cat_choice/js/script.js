@@ -2,16 +2,17 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const img = document.getElementsByTagName("img");
     const li = document.getElementsByTagName("li");
     let split = img[0].src.split("/");
-    console.log(img[0].src);
-    console.log(split[split.length - 1].split("_")[this.length + 1].split(".")[0].split("0")[1]);
-    console.log(split[split.length - 1].split("_"));
+    // console.log(img[0].src);
+    // console.log(split[split.length - 1].split("_")[this.length + 1].split(".")[0].split("0")[1]);
+    // console.log(split[split.length - 1].split("_"));
 
-    const max_number = 4;
+    const max_number = 2;
     // let random_number = Math.floor(Math.random() * max_number) + 1;
     // img[2].src = "img/cat_0" + random_number + ".png";
 
     for (let i = 1; i < img.length; i++) {
         img[i].src = "img/cat_0" + random() + ".png";
+        img[i].src = "img/img/cat_0" + random() + ".jpg";
     }
 
     for (let i = 0; i < li.length; i++) {
@@ -33,11 +34,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
             // console.log(img_black[i].src);
             let answer = img_black[i].src.split("/")[split.length - 1].split("_")[this.length + 1].split(".")[0].split("0")[1];
             // console.log(img_black[i].src.split("/")[split.length - 1].split("_")[this.length + 1].split(".")[0].split("0")[1]);
-            if (answer == 3) {
+            console.log(img_black[i].src);
+            if (answer == 1) {
+                // if (answer == 3) {
                 li[i].classList.add("answer");
             }
         }
         console.log(document.getElementsByClassName("choice answer").length);
+        console.log(document.getElementsByClassName("choice").length)
         document.getElementsByTagName("p")[0].style.color = "#000000";
         document.getElementsByTagName("p")[0].style.fontWeight = "900";
         document.getElementsByTagName("p")[0].innerHTML = "正解数：" + document.getElementsByClassName("choice answer").length;
