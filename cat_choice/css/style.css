@@ -6,6 +6,10 @@
     text-align: center;
 }
 
+html{
+    font-size: 100%;
+}
+
 img {
     width: 65px;
     object-fit: cover;
@@ -51,6 +55,8 @@ a:hover{
 
 p{
     color: #FFFFFF;
+    font-size: 1.5rem;
+    margin: 3%;
 }
 
 .flex {
@@ -61,7 +67,6 @@ p{
 .wrap {
     flex-wrap: wrap;
 }
-
 
 .answer {
     background-color: #f48932;
