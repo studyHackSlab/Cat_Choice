@@ -13,13 +13,22 @@ img {
 
 li {
     list-style: none;
-    border: 1px solid #FFFFFF;
+    border: 2px solid #FFFFFF;
     padding: 1%;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 2%;
+    margin: 1%;
+}
+
+.choice {
+    border: 2px solid #f48932;
+    padding: 1%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 a{
@@ -27,7 +36,7 @@ a{
     align-items: center;
     justify-content: center;
     /* width: fit-content; */
-    border: 1px solid #f48932;
+    border: 2px solid #f48932;
     padding: 2%;
     border-radius: 10px;
     margin-top: 5%;
@@ -53,14 +62,6 @@ p{
     flex-wrap: wrap;
 }
 
-.choice {
-    border: 1px solid #f48932;
-    padding: 1%;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 .answer {
     background-color: #f48932;

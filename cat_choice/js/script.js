@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         document.getElementsByTagName("p")[0].style.color = "#000000";
         document.getElementsByTagName("p")[0].innerHTML = "正解数：" + document.getElementsByClassName("choice answer").length;
         console.log(document.getElementsByTagName("p")[0].innerHTML);
-        alert('時間切れです');
+        // alert('時間切れです');
     }, 5000);
     // <li><img src="img/cat_01.png" alt="ねこ１"></li>
 
