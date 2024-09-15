@@ -41,6 +41,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
             img_black[i].style.display = "none";
             li[i].classList.add("border");
             li[i].style.pointerEvents = "auto";
+            li[i].style.cursor = "pointer";
+            img_black[i].style.cursor = "pointer";
             // console.log(li[i]);
         }
         console.log("5000");
