@@ -1,13 +1,20 @@
 @charset "utf-8";
 
+/* 参考加増 */
+/* https://sozai-good.com/illust/animal/cat/40275 */
+
 * {
     margin: 0;
     padding: 0;
     text-align: center;
+    /* outline: 1px solid  #f48932; */
 }
 
-html{
+html {
     font-size: 100%;
+    font-family: "Mochiy Pop One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 img {
@@ -27,10 +34,23 @@ li {
     align-items: center;
     justify-content: center;
     margin: 1%;
+    pointer-events: none;
+}
+
+span{
+    display: block;
+}
+
+.border {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #f48932;
 }
 
 .choice {
-    border: 2px solid #f48932;
+    /* border: 2px solid #f48932; */
+    background-color: #f4893284;
     padding: 1%;
     border-radius: 50%;
     display: flex;
@@ -38,7 +58,7 @@ li {
     justify-content: center;
 }
 
-a{
+a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,11 +72,11 @@ a{
     max-width: 400px;
 }
 
-a:hover{
+a:hover {
     background-color: #f48932;
 }
 
-p{
+p {
     color: #FFFFFF;
     font-size: 1.5rem;
     margin: 3%;
@@ -73,4 +93,59 @@ p{
 
 .answer {
     background-color: #f48932;
+}
+
+.events_none {
+    pointer-events: none;
+}
+
+.correct_answer {
+    background-color: #ff4000;
+}
+
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+    body {
+        width: 90%;
+        margin-inline: auto;
+    }
+
+    img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .border {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        border: 2px solid #f48932;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        width: 50%;
+        margin-inline: auto;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+
+    img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .border {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        border: 2px solid #f48932;
+    }
 }
