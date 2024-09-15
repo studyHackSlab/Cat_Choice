@@ -37,7 +37,7 @@ li {
     pointer-events: none;
 }
 
-span{
+span {
     display: block;
 }
 
@@ -45,7 +45,10 @@ span{
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    border: 2px solid #f48932;
+    /* border: 2px solid #f48932; */
+
+    outline: 2px solid #f48932;;
+    outline-offset: -2px;
 }
 
 .choice {
