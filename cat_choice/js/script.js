@@ -1,7 +1,13 @@
 document.addEventListener('DOMContentLoaded', (event) => {
     const img = document.getElementsByTagName("img");
     const li = document.getElementsByTagName("li");
+    const span = document.getElementsByTagName("span");
     let split = img[0].src.split("/");
+    let choice = Math.floor(Math.random() * 2);
+
+    if (choice) {
+        span[0].innerHTML = "しろねこを選ぼう";
+    }
     // console.log(img[0].src);
     // console.log(split[split.length - 1].split("_")[this.length + 1].split(".")[0].split("0")[1]);
     // console.log(split[split.length - 1].split("_"));
@@ -50,11 +56,20 @@ document.addEventListener('DOMContentLoaded', (event) => {
             // console.log(img_black[i].src.split("/")[split.length - 1].split("_")[this.length + 1].split(".")[0].split("0")[1]);
             // console.log(img_black[i].src);
             // if (answer == 1 || answer == 3 ) {
-            if (answer == 3 || answer == 6) {
-                li[i].classList.add("answer");
-            }
-            else {
-                li[i].classList.add("events_none");
+            if (choice) {
+                if (answer == 5) {
+                    li[i].classList.add("answer");
+                }
+                else {
+                    li[i].classList.add("events_none");
+                }
+            } else {
+                if (answer == 3 || answer == 6) {
+                    li[i].classList.add("answer");
+                }
+                else {
+                    li[i].classList.add("events_none");
+                }
             }
 
             if (li[i].className.match("choice answer")) {
